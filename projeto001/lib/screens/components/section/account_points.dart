@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:projetof/screens/components/Themes/themes_colors.dart';
-import 'package:projetof/screens/components/box_cards.dart';
-import 'package:projetof/screens/components/color_dot.dart';
-import 'package:projetof/screens/components/content_division.dart';
+import 'package:projeto1/screens/components/section/box_cards.dart';
+import 'package:projeto1/screens/components/color_dot.dart';
+import 'package:projeto1/screens/components/section/content_division.dart';
+import 'package:projeto1/screens/components/Themes/themes_colors.dart';
 
 class AccountPoints extends StatelessWidget {
   const AccountPoints({Key? key}) : super(key: key);
@@ -58,7 +58,7 @@ class _AccountPointsContent extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(right: 4.0),
-                child: ColorDot(color: ThemeColors.AccountPoints['delivery']),
+                child: ColorDot(color: ThemeColors.recentActivity['dotLar']),
               ),
               const Text('Entrega grátis: 15000pts'),
             ],
@@ -68,7 +68,7 @@ class _AccountPointsContent extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(right: 4.0),
-              child: ColorDot(color: ThemeColors.AccountPoints['streaming']),
+              child: ColorDot(color: ThemeColors.recentActivity['dotAzu']),
             ),
             const Text('1 mês de streaming: 30000pts'),
           ],
